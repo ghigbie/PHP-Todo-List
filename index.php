@@ -10,6 +10,11 @@ $animals = [
 require 'index.view.php';
 
 
-
+$tasks = [
+    'title'      => 'Walk the doggie',
+    'due'        => 'today',
+    'assignedTo' => 'Beth',
+    'completed'  =>  false
+];
 
 

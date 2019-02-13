@@ -34,8 +34,6 @@
                 </form>
             </div>
         </nav>
-        <h1><?= PAGE_TITLE ?></h1>
-
         <ul>
             <?php foreach($todos as $todo): ?>
                 <li><?= $todo ?></li>
@@ -50,12 +48,26 @@
         <ul>
             <?php foreach($animals as $key => $value):?>
                 <li>
-                    <strong><?=$key?>: </strong>
+                    <strong><?= $key ?>: </strong>
                     <?= $value ?>
                 </li>
             <?php endforeach; ?>
 
         </ul>
+        <br>
+        <ul>
+            <?php foreach($tasks as $heading => $value): ?>
+               <li>
+                   <strong><?= $heading ?>: </strong>
+                   <?= $value ?>
+               </li>
+            <?php endforeach; ?>
+        </ul>
+        <div>
+            <?= "<pre>" ?>
+            <?= var_dump($animals) ?>
+            <?= "</pre>" ?>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
