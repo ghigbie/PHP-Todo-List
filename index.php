@@ -13,5 +13,11 @@
             <li>$todo</li>
         <?php endforeach; ?>
     </ul>
+    <br>
+    <ul>
+        <?php foreach ($todos as $todo) {
+            echo "<li>$todo</li>";
+        }?>
+    </ul>
 </body>
 </html>
