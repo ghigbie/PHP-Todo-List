@@ -8,6 +8,10 @@
 </head>
 <body>
 
-
+    <ul>
+        <?php foreach ($todos as $todo) : ?>
+            <li>$todo</li>
+        <?php endforeach; ?>
+    </ul>
 </body>
 </html>
