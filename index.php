@@ -1,4 +1,5 @@
 <?php
+require 'functions.php';
 
 define("PAGE_TITLE", "PHP Todo List");
 $todos = ['Walk the dog', 'Hunt the rabbit', 'Show the cat who is boss'];
@@ -14,6 +15,5 @@ $tasks = [
     'assigned_to' => 'Beth',
     'completed'  =>  true
 ];
-
 
 require 'index.view.php';
