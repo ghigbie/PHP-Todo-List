@@ -48,7 +48,7 @@
         <ul>
             <?php foreach($animals as $key => $value):?>
                 <li>
-                    <strong><?= $key ?>: </strong>
+                    <strong><?= ucwords($key) ?>: </strong>
                     <?= $value ?>
                 </li>
             <?php endforeach; ?>
@@ -56,12 +56,31 @@
         </ul>
         <br>
         <ul>
-            <?php foreach($tasks as $heading => $value): ?>
+            <?php foreach($tasks as $heading => $value):?>
                <li>
-                   <strong><?= $heading ?>: </strong>
+                   <strong><?= ucwords($heading) ?>: </strong>
                    <?= $value ?>
                </li>
             <?php endforeach; ?>
+        </ul>
+        <br>
+        <ul>
+            <li>
+                <strong>Name: </strong>
+                <?= $tasks['name']; ?>
+            </li>
+            <li>
+                <strong>Due date: </strong>
+                <?= $tasks['due']; ?>
+            </li>
+            <li>
+                <strong>Assigned To: </strong>
+                <?= $tasks['assigned_to']; ?>
+            </li>
+            <li>
+                <strong>Completed: </strong>
+                <?= $tasks['completed']; ?>
+            </li>
         </ul>
         <div>
             <?= "<pre>" ?>

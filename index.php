@@ -7,14 +7,13 @@ $animals = [
     'age' => 4,
     'fur_color' => 'brown'
 ];
-require 'index.view.php';
-
 
 $tasks = [
-    'title'      => 'Walk the doggie',
+    'name'      => 'Walk the doggie',
     'due'        => 'today',
-    'assignedTo' => 'Beth',
+    'assigned_to' => 'Beth',
     'completed'  =>  false
 ];
 
 
+require 'index.view.php';
