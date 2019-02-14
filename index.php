@@ -12,7 +12,7 @@ $tasks = [
     'name'      => 'Walk the doggie',
     'due'        => 'today',
     'assigned_to' => 'Beth',
-    'completed'  =>  false
+    'completed'  =>  true
 ];
 
 
