@@ -79,7 +79,7 @@
             </li>
             <li>
                 <strong>Completed: </strong>
-                <?= $tasks['completed']; ?>
+                <?= $tasks['completed'] ? 'Complete' : 'Incomplete'; ?>
             </li>
         </ul>
         <div>
