@@ -98,6 +98,7 @@
                     <span class="icon">Incomplete</span>
                 <?php endif; ?>
             </li>
+
         </ul>
         <div>
             <?php dump_die($animals); ?>
